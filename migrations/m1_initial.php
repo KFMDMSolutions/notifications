@@ -25,7 +25,7 @@ class m1_initial extends \phpbb\db\migration\migration
 				$this->table_prefix . 'push_subscriptions' => [
 					'COLUMNS'     => [
 						'subscription_id' => ['UINT', null, 'auto_increment'],
-						'endpoint'        => ['VCHAR', ''],
+						'endpoint'        => ['VCHAR:500', ''],
 						'push_key_auth'   => ['VCHAR', ''],
 						'push_key_p256dh' => ['VCHAR', ''],
 						'user_id'         => ['UINT', 0],
